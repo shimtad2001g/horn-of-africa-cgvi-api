@@ -3,6 +3,8 @@
 *.egg-info/
 .venv/
 *.zip
+*.exe
+*.aux.xml
 data/raw/
 data/processed/*.tif
 output/*.tif
