@@ -1,0 +1,56 @@
+Horn of Africa Climate & Gender Vulnerability Map (CGVI) - Deliverable Manifest
+Author          : Shimeles Tadesse Zelelew
+GEE Project ID  : ee-shimtad2001g
+Open-Source Data: UCSB CHIRPS (Drought / SPI), WorldPop 2020 (Female Population Exposure), NASA SRTM (Terrain Slope Sensitivity)
+Total Files     : 50
+----------------------------------------------------------------------------------------
+[scripts        ] 01_climate_hazard.py                       |        893 B
+[scripts        ] 02_gender_proxy.py                         |        896 B
+[scripts        ] 03_terrain.py                              |        558 B
+[scripts        ] 04_mcda_overlay.py                         |      3,525 B
+[scripts        ] 05_render_cartography.py                   |      7,174 B
+[scripts        ] 06_equal_area_zonal.py                     |      3,124 B
+[scripts        ] 07_qgis4_layout_builder.py                 |      5,300 B
+[scripts        ] 08_export_qgis_layout.py                   |      1,365 B
+[scripts        ] 09_country_focus_ethiopia.py               |      6,841 B
+[scripts        ] 10_driver_contribution.py                  |      7,445 B
+[scripts        ] 11_sensitivity_and_rescaling.py            |      8,268 B
+[scripts        ] 12_project_manifest.py                     |      2,979 B
+[scripts        ] run_all_gee.ps1                            |        826 B
+[scripts        ] test_gee.py                                |        378 B
+[data\raw       ] female_norm.tif                            |  4,486,548 B | CRS=EPSG:4326 | Shape=[1127, 1003] | Res=[0.01796630568239043, 0.01796630568239043]
+[data\raw       ] slope_norm.tif                             |  9,690,051 B | CRS=EPSG:4326 | Shape=[2254, 2004] | Res=[0.008983152841195214, 0.008983152841195214]
+[data\raw       ] spi_norm.tif                               |    748,648 B | CRS=EPSG:4326 | Shape=[451, 402] | Res=[0.04491576420597607, 0.04491576420597607]
+[data\processed ] drought_hazard_1km.tif                     | 26,371,877 B | CRS=EPSG:4326 | Shape=[2254, 2004] | Res=[0.008983152841195212, 0.008983152841195214]
+[data\processed ] drought_hazard_1km.tif.aux.xml             |        422 B
+[data\processed ] eth_focus_cgvi_class_utm37n_1km.tif        |     30,228 B | CRS=EPSG:32637 | Shape=[1315, 1673] | Res=[1000.0, 1000.0]
+[data\processed ] eth_focus_cgvi_utm37n_1km.tif              | 18,180,412 B | CRS=EPSG:32637 | Shape=[1315, 1673] | Res=[1000.0, 1000.0]
+[data\processed ] female_exposure_1km.tif                    | 30,824,803 B | CRS=EPSG:4326 | Shape=[2254, 2004] | Res=[0.008983152841195212, 0.008983152841195214]
+[data\processed ] female_exposure_1km.tif.aux.xml            |        428 B
+[data\processed ] horn_cgvi_balanced_classified.tif          |    145,924 B | CRS=EPSG:4326 | Shape=[2254, 2004] | Res=[0.008983152841195212, 0.008983152841195214]
+[data\processed ] horn_cgvi_balanced_continuous.tif          | 14,282,692 B | CRS=EPSG:4326 | Shape=[2254, 2004] | Res=[0.008983152841195212, 0.008983152841195214]
+[data\processed ] horn_cgvi_classified.tif                   |     47,142 B | CRS=EPSG:4326 | Shape=[2254, 2004] | Res=[0.008983152841195212, 0.008983152841195214]
+[data\processed ] horn_cgvi_classified.tif.aux.xml           |        448 B
+[data\processed ] horn_cgvi_classified_aea_1km.tif           |     56,695 B | CRS=ESRI:102022 | Shape=[2392, 1888] | Res=[1000.0, 1000.0]
+[data\processed ] horn_cgvi_continuous.tif                   | 29,312,211 B | CRS=EPSG:4326 | Shape=[2254, 2004] | Res=[0.008983152841195212, 0.008983152841195214]
+[data\processed ] horn_cgvi_continuous.tif.aux.xml           |        475 B
+[data\processed ] horn_cgvi_continuous_aea_1km.tif           | 29,453,586 B | CRS=ESRI:102022 | Shape=[2392, 1888] | Res=[1000.0, 1000.0]
+[data\processed ] horn_cgvi_dominant_driver_1km.tif          |     37,467 B | CRS=EPSG:4326 | Shape=[2254, 2004] | Res=[0.008983152841195212, 0.008983152841195214]
+[data\processed ] slope_sensitivity_1km.tif                  | 12,486,251 B | CRS=EPSG:4326 | Shape=[2254, 2004] | Res=[0.008983152841195212, 0.008983152841195214]
+[data\processed ] slope_sensitivity_1km.tif.aux.xml          |        424 B
+[output         ] eth_focus_cgvi_summary.txt                 |        716 B
+[output         ] eth_focus_cgvi_utm37n_300dpi.png           |  2,040,285 B
+[output         ] eth_focus_cgvi_utm37n_600dpi.png           |  2,738,163 B
+[output         ] horn_cgvi_driver_analysis_300dpi.png       |    283,826 B
+[output         ] horn_cgvi_driver_analysis_600dpi.png       |    653,221 B
+[output         ] horn_cgvi_driver_summary.txt               |        645 B
+[output         ] horn_cgvi_equal_area_summary.txt           |        666 B
+[output         ] horn_cgvi_sensitivity_300dpi.png           |  3,014,716 B
+[output         ] horn_cgvi_sensitivity_600dpi.png           |  8,812,928 B
+[output         ] horn_cgvi_sensitivity_report.txt           |      1,694 B
+[output         ] horn_climate_gender_vulnerability_300dpi.png |  2,368,215 B
+[output         ] horn_climate_gender_vulnerability_600dpi.png |  5,326,829 B
+[output         ] horn_qgis_layout_300dpi.png                |    327,458 B
+[output         ] horn_qgis_layout_A3.pdf                    |  4,075,604 B
+[qgis_project   ] horn_vulnerability.qgs                     |      2,966 B
+[qgis_project   ] horn_vulnerability_styled.qgz              |     12,158 B

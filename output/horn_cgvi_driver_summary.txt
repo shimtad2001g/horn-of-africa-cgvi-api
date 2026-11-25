@@ -1,0 +1,11 @@
+Horn of Africa CGVI - Component Contribution & Dominant Driver Summary
+Weights: Drought Hazard = 0.45, Female Exposure = 0.40, Slope Sensitivity = 0.15
+
+1. Mean Relative Contribution to CGVI Score:
+   All Valid Pixels (n=4,517,016): Drought = 98.63% | Female Exposure = 0.08% | Slope = 1.30%
+   Moderate Hotspots (CGVI >= 0.40, n=1,332,092): Drought = 100.00% | Female Exposure = 0.00% | Slope = 0.00%
+
+2. Dominant Driver Footprint (Pixel Share):
+   Driver 1 - Drought Hazard (0.45 * SPI)   : 4,517,015 px (100.00%)
+   Driver 2 - Female Exposure (0.40 * Pop)  : 1 px (0.00%)
+   Driver 3 - Slope Sensitivity (0.15 * DEM): 0 px (0.00%)

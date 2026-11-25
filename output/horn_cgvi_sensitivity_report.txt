@@ -1,0 +1,24 @@
+Horn of Africa CGVI - Component Distribution & MCDA Sensitivity Report
+Valid 1 km Cells Analyzed: 4,517,016
+
+1. Raw Harmonized Input Distributions (0-1 scale):
+   Drought Hazard (SPI)   : min=0.4375, p2=0.4713, median=0.4961, mean=0.6429, p95=1.0000, p98=1.0000, p99=1.0000, max=1.0000, std=0.2315
+   Female Exposure (Pop)  : min=0.0000, p2=0.0000, median=0.0001, mean=0.0004, p95=0.0019, p98=0.0038, p99=0.0058, max=0.6328, std=0.0024
+   Slope Sensitivity (DEM): min=0.0000, p2=0.0000, median=0.0044, mean=0.0205, p95=0.1064, p98=0.1668, p99=0.2086, max=0.5748, std=0.0414
+
+2. Composite Scenario Comparison:
+   A. Baseline (0.45/0.40/0.15, raw)          : min=0.1976, p2=0.2159, median=0.2268, mean=0.2925, p95=0.4500, p98=0.4500, p99=0.4500, max=0.5079, std=0.1023
+   B. Equal Weights (0.33/0.33/0.33, raw)     : min=0.1470, p2=0.1618, median=0.1732, mean=0.2213, p95=0.3333, p98=0.3333, p99=0.3333, max=0.4618, std=0.0738
+   C. Balanced Rescaled (0.45/0.40/0.15, p2-98): min=0.0000, p2=0.0189, median=0.0980, mean=0.1997, p95=0.4500, p98=0.4500, p99=0.4547, max=0.8670, std=0.1836
+   Pearson r (Baseline vs Equal Weights)      : 0.9928
+   Pearson r (Baseline vs Balanced Rescaled)  : 0.8968
+
+3. Effective Mean Component Share in Scenario C (Balanced Rescaled):
+   Drought Hazard = 56.81% | Female Exposure = 25.55% | Slope Sensitivity = 17.63%
+
+4. Scenario C (Balanced Rescaled) 5-Class Pixel Breakdown:
+   Class 1 - Very Low (<0.20)   : 2,769,244 px (61.31%)
+   Class 2 - Low (0.20-0.40)    : 301,156 px (6.67%)
+   Class 3 - Moderate (0.40-0.60): 1,446,082 px (32.01%)
+   Class 4 - High (0.60-0.80)   : 461 px (0.01%)
+   Class 5 - Very High (>=0.80) : 73 px (0.00%)

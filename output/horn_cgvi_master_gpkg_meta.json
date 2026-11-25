@@ -1,0 +1,20 @@
+{
+  "package": "horn_cgvi_master.gpkg",
+  "standard": "OGC GeoPackage",
+  "author": "Shimeles Tadesse Zelelew",
+  "gee_project": "ee-shimtad2001g",
+  "sources": [
+    "UCSB CHIRPS",
+    "WorldPop 2020",
+    "NASA SRTM"
+  ],
+  "tables": [
+    "drought_hazard_1km",
+    "female_exposure_1km",
+    "slope_sensitivity_1km",
+    "horn_cgvi_continuous",
+    "horn_cgvi_classified",
+    "horn_cgvi_balanced_continuous",
+    "horn_cgvi_dominant_driver_1km"
+  ]
+}

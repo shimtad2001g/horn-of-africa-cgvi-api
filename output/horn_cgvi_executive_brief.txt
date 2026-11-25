@@ -1,0 +1,21 @@
+HORN OF AFRICA CLIMATE & GENDER VULNERABILITY (CGVI) — EXECUTIVE TECHNICAL BRIEF
+=======================================================================================
+Author: Shimeles Tadesse Zelelew
+GEE Cloud Project: ee-shimtad2001g
+Environment & Stack: Conda (geospatial_auditor / gee_horn, Python 3.11), rioxarray, rasterio, geopandas, matplotlib, QGIS, Streamlit
+
+1. STUDY SCOPE & OPEN-SOURCE INPUTS
+- Regional Bounding Box: [33.0°E, -5.0°S, 51.0°E, 15.0°N] (~4.45M sq km across the Horn of Africa)
+- Ethiopia Regional Focus: [33.0°E, 3.3°N, 48.0°E, 15.0°N], reprojected to UTM Zone 37N (EPSG:32637, 1,000 m resolution; 2,131,163.00 sq km focus domain)
+- Core Datasets: UCSB CHIRPS (drought hazard), WorldPop 2020 (female population exposure), NASA SRTM (slope sensitivity)
+- Valid Regional Grid: 4,517,016 valid 1 km cells
+
+2. MCDA & SENSITIVITY DIAGNOSTICS
+- Baseline MCDA Weights: 0.45 Drought Hazard + 0.40 Female Exposure + 0.15 Slope Sensitivity
+- Active Reference Readout (0.45 / 0.40 / 0.15, P2-P98 rescaled, threshold >= 0.40): Mean CGVI = 0.1997, Max CGVI = 0.8670, Hotspots = 1,446,616 px (32.03%)
+- Sensitivity Shift (P2-P98 Rescaling): Shifts from strong raw drought dominance (98.63%) toward balanced multi-factor sensitivity (56.81% drought, 25.55% female exposure, 17.63% slope), preventing extreme tails from masking demographic and terrain exposure.
+
+3. DELIVERABLES & INTERACTIVE TOOLS
+- Master OGC GeoPackage: output\horn_cgvi_master.gpkg (~65.35 MB) consolidating harmonized 1 km rasters, continuous/classified/balanced composites, and dominant driver layers.
+- Cartography & GIS: 300 & 600 DPI publication figures, QGIS project (qgis_project\horn_vulnerability_styled.qgz), A3 PDF & 300 DPI layout exports, and workflow schematics.
+- Interactive Explorer: scripts\13_streamlit_explorer.py supporting Horn (EPSG:4326) and Ethiopia (EPSG:32637) views, scenario presets, direct GPKG subdatasets, side-by-side/difference maps, live histograms/5-class charts, and CSV/GeoTIFF snapshot exports.

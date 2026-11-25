@@ -1,0 +1,499 @@
+{
+  "project": "Horn of Africa Climate & Gender Vulnerability Map (CGVI)",
+  "author": "Shimeles Tadesse Zelelew",
+  "gee_cloud_project": "ee-shimtad2001g",
+  "open_source_sources": [
+    "UCSB CHIRPS (Drought / SPI)",
+    "WorldPop 2020 (Female Population Exposure)",
+    "NASA SRTM (Terrain Slope Sensitivity)"
+  ],
+  "generated_utc": "2026-11-25T08:25:47.342194+00:00",
+  "total_files": 50,
+  "files": [
+    {
+      "category": "scripts",
+      "name": "01_climate_hazard.py",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\01_climate_hazard.py",
+      "size_bytes": 893,
+      "modified_utc": "2026-11-25T06:32:08.076299+00:00"
+    },
+    {
+      "category": "scripts",
+      "name": "02_gender_proxy.py",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\02_gender_proxy.py",
+      "size_bytes": 896,
+      "modified_utc": "2026-11-25T06:35:44.729312+00:00"
+    },
+    {
+      "category": "scripts",
+      "name": "03_terrain.py",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\03_terrain.py",
+      "size_bytes": 558,
+      "modified_utc": "2026-11-25T06:35:44.730282+00:00"
+    },
+    {
+      "category": "scripts",
+      "name": "04_mcda_overlay.py",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\04_mcda_overlay.py",
+      "size_bytes": 3525,
+      "modified_utc": "2026-11-25T06:40:05.911083+00:00"
+    },
+    {
+      "category": "scripts",
+      "name": "05_render_cartography.py",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\05_render_cartography.py",
+      "size_bytes": 7174,
+      "modified_utc": "2026-11-25T06:43:08.266917+00:00"
+    },
+    {
+      "category": "scripts",
+      "name": "06_equal_area_zonal.py",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\06_equal_area_zonal.py",
+      "size_bytes": 3124,
+      "modified_utc": "2026-11-25T06:48:34.125769+00:00"
+    },
+    {
+      "category": "scripts",
+      "name": "07_qgis4_layout_builder.py",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\07_qgis4_layout_builder.py",
+      "size_bytes": 5300,
+      "modified_utc": "2026-11-25T07:00:02.125938+00:00"
+    },
+    {
+      "category": "scripts",
+      "name": "08_export_qgis_layout.py",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\08_export_qgis_layout.py",
+      "size_bytes": 1365,
+      "modified_utc": "2026-11-25T07:10:49.380636+00:00"
+    },
+    {
+      "category": "scripts",
+      "name": "09_country_focus_ethiopia.py",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\09_country_focus_ethiopia.py",
+      "size_bytes": 6841,
+      "modified_utc": "2026-11-25T08:15:46.260854+00:00"
+    },
+    {
+      "category": "scripts",
+      "name": "10_driver_contribution.py",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\10_driver_contribution.py",
+      "size_bytes": 7445,
+      "modified_utc": "2026-11-25T08:18:21.563111+00:00"
+    },
+    {
+      "category": "scripts",
+      "name": "11_sensitivity_and_rescaling.py",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\11_sensitivity_and_rescaling.py",
+      "size_bytes": 8268,
+      "modified_utc": "2026-11-25T08:21:41.816346+00:00"
+    },
+    {
+      "category": "scripts",
+      "name": "12_project_manifest.py",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\12_project_manifest.py",
+      "size_bytes": 2979,
+      "modified_utc": "2026-11-25T08:25:46.401023+00:00"
+    },
+    {
+      "category": "scripts",
+      "name": "run_all_gee.ps1",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\run_all_gee.ps1",
+      "size_bytes": 826,
+      "modified_utc": "2026-11-25T06:31:28.160904+00:00"
+    },
+    {
+      "category": "scripts",
+      "name": "test_gee.py",
+      "path": "C:\\GeoProjects\\HornVulnerability\\scripts\\test_gee.py",
+      "size_bytes": 378,
+      "modified_utc": "2026-11-25T06:25:04.107781+00:00"
+    },
+    {
+      "category": "data\\raw",
+      "name": "female_norm.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\raw\\female_norm.tif",
+      "size_bytes": 4486548,
+      "modified_utc": "2026-11-25T06:36:07.032349+00:00",
+      "crs": "EPSG:4326",
+      "shape": [
+        1127,
+        1003
+      ],
+      "res": [
+        0.01796630568239043,
+        0.01796630568239043
+      ]
+    },
+    {
+      "category": "data\\raw",
+      "name": "slope_norm.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\raw\\slope_norm.tif",
+      "size_bytes": 9690051,
+      "modified_utc": "2026-11-25T06:36:22.543349+00:00",
+      "crs": "EPSG:4326",
+      "shape": [
+        2254,
+        2004
+      ],
+      "res": [
+        0.008983152841195214,
+        0.008983152841195214
+      ]
+    },
+    {
+      "category": "data\\raw",
+      "name": "spi_norm.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\raw\\spi_norm.tif",
+      "size_bytes": 748648,
+      "modified_utc": "2026-11-25T06:33:11.639349+00:00",
+      "crs": "EPSG:4326",
+      "shape": [
+        451,
+        402
+      ],
+      "res": [
+        0.04491576420597607,
+        0.04491576420597607
+      ]
+    },
+    {
+      "category": "data\\processed",
+      "name": "drought_hazard_1km.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\drought_hazard_1km.tif",
+      "size_bytes": 26371877,
+      "modified_utc": "2026-11-25T06:40:11.201253+00:00",
+      "crs": "EPSG:4326",
+      "shape": [
+        2254,
+        2004
+      ],
+      "res": [
+        0.008983152841195212,
+        0.008983152841195214
+      ]
+    },
+    {
+      "category": "data\\processed",
+      "name": "drought_hazard_1km.tif.aux.xml",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\drought_hazard_1km.tif.aux.xml",
+      "size_bytes": 422,
+      "modified_utc": "2026-11-25T06:57:21.439806+00:00"
+    },
+    {
+      "category": "data\\processed",
+      "name": "eth_focus_cgvi_class_utm37n_1km.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\eth_focus_cgvi_class_utm37n_1km.tif",
+      "size_bytes": 30228,
+      "modified_utc": "2026-11-25T08:15:48.848031+00:00",
+      "crs": "EPSG:32637",
+      "shape": [
+        1315,
+        1673
+      ],
+      "res": [
+        1000.0,
+        1000.0
+      ]
+    },
+    {
+      "category": "data\\processed",
+      "name": "eth_focus_cgvi_utm37n_1km.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\eth_focus_cgvi_utm37n_1km.tif",
+      "size_bytes": 18180412,
+      "modified_utc": "2026-11-25T08:15:48.812060+00:00",
+      "crs": "EPSG:32637",
+      "shape": [
+        1315,
+        1673
+      ],
+      "res": [
+        1000.0,
+        1000.0
+      ]
+    },
+    {
+      "category": "data\\processed",
+      "name": "female_exposure_1km.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\female_exposure_1km.tif",
+      "size_bytes": 30824803,
+      "modified_utc": "2026-11-25T06:40:11.523291+00:00",
+      "crs": "EPSG:4326",
+      "shape": [
+        2254,
+        2004
+      ],
+      "res": [
+        0.008983152841195212,
+        0.008983152841195214
+      ]
+    },
+    {
+      "category": "data\\processed",
+      "name": "female_exposure_1km.tif.aux.xml",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\female_exposure_1km.tif.aux.xml",
+      "size_bytes": 428,
+      "modified_utc": "2026-11-25T06:57:21.446797+00:00"
+    },
+    {
+      "category": "data\\processed",
+      "name": "horn_cgvi_balanced_classified.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\horn_cgvi_balanced_classified.tif",
+      "size_bytes": 145924,
+      "modified_utc": "2026-11-25T08:21:44.115302+00:00",
+      "crs": "EPSG:4326",
+      "shape": [
+        2254,
+        2004
+      ],
+      "res": [
+        0.008983152841195212,
+        0.008983152841195214
+      ]
+    },
+    {
+      "category": "data\\processed",
+      "name": "horn_cgvi_balanced_continuous.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\horn_cgvi_balanced_continuous.tif",
+      "size_bytes": 14282692,
+      "modified_utc": "2026-11-25T08:21:44.032343+00:00",
+      "crs": "EPSG:4326",
+      "shape": [
+        2254,
+        2004
+      ],
+      "res": [
+        0.008983152841195212,
+        0.008983152841195214
+      ]
+    },
+    {
+      "category": "data\\processed",
+      "name": "horn_cgvi_classified.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\horn_cgvi_classified.tif",
+      "size_bytes": 47142,
+      "modified_utc": "2026-11-25T06:40:12.202234+00:00",
+      "crs": "EPSG:4326",
+      "shape": [
+        2254,
+        2004
+      ],
+      "res": [
+        0.008983152841195212,
+        0.008983152841195214
+      ]
+    },
+    {
+      "category": "data\\processed",
+      "name": "horn_cgvi_classified.tif.aux.xml",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\horn_cgvi_classified.tif.aux.xml",
+      "size_bytes": 448,
+      "modified_utc": "2026-11-25T06:57:21.443811+00:00"
+    },
+    {
+      "category": "data\\processed",
+      "name": "horn_cgvi_classified_aea_1km.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\horn_cgvi_classified_aea_1km.tif",
+      "size_bytes": 56695,
+      "modified_utc": "2026-11-25T06:48:36.376760+00:00",
+      "crs": "ESRI:102022",
+      "shape": [
+        2392,
+        1888
+      ],
+      "res": [
+        1000.0,
+        1000.0
+      ]
+    },
+    {
+      "category": "data\\processed",
+      "name": "horn_cgvi_continuous.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\horn_cgvi_continuous.tif",
+      "size_bytes": 29312211,
+      "modified_utc": "2026-11-25T06:40:12.128234+00:00",
+      "crs": "EPSG:4326",
+      "shape": [
+        2254,
+        2004
+      ],
+      "res": [
+        0.008983152841195212,
+        0.008983152841195214
+      ]
+    },
+    {
+      "category": "data\\processed",
+      "name": "horn_cgvi_continuous.tif.aux.xml",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\horn_cgvi_continuous.tif.aux.xml",
+      "size_bytes": 475,
+      "modified_utc": "2026-11-25T06:57:21.436804+00:00"
+    },
+    {
+      "category": "data\\processed",
+      "name": "horn_cgvi_continuous_aea_1km.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\horn_cgvi_continuous_aea_1km.tif",
+      "size_bytes": 29453586,
+      "modified_utc": "2026-11-25T06:48:36.309762+00:00",
+      "crs": "ESRI:102022",
+      "shape": [
+        2392,
+        1888
+      ],
+      "res": [
+        1000.0,
+        1000.0
+      ]
+    },
+    {
+      "category": "data\\processed",
+      "name": "horn_cgvi_dominant_driver_1km.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\horn_cgvi_dominant_driver_1km.tif",
+      "size_bytes": 37467,
+      "modified_utc": "2026-11-25T08:18:23.443564+00:00",
+      "crs": "EPSG:4326",
+      "shape": [
+        2254,
+        2004
+      ],
+      "res": [
+        0.008983152841195212,
+        0.008983152841195214
+      ]
+    },
+    {
+      "category": "data\\processed",
+      "name": "slope_sensitivity_1km.tif",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\slope_sensitivity_1km.tif",
+      "size_bytes": 12486251,
+      "modified_utc": "2026-11-25T06:40:11.708253+00:00",
+      "crs": "EPSG:4326",
+      "shape": [
+        2254,
+        2004
+      ],
+      "res": [
+        0.008983152841195212,
+        0.008983152841195214
+      ]
+    },
+    {
+      "category": "data\\processed",
+      "name": "slope_sensitivity_1km.tif.aux.xml",
+      "path": "C:\\GeoProjects\\HornVulnerability\\data\\processed\\slope_sensitivity_1km.tif.aux.xml",
+      "size_bytes": 424,
+      "modified_utc": "2026-11-25T06:57:21.441806+00:00"
+    },
+    {
+      "category": "output",
+      "name": "eth_focus_cgvi_summary.txt",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\eth_focus_cgvi_summary.txt",
+      "size_bytes": 716,
+      "modified_utc": "2026-11-25T08:15:48.881031+00:00"
+    },
+    {
+      "category": "output",
+      "name": "eth_focus_cgvi_utm37n_300dpi.png",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\eth_focus_cgvi_utm37n_300dpi.png",
+      "size_bytes": 2040285,
+      "modified_utc": "2026-11-25T08:15:53.577847+00:00"
+    },
+    {
+      "category": "output",
+      "name": "eth_focus_cgvi_utm37n_600dpi.png",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\eth_focus_cgvi_utm37n_600dpi.png",
+      "size_bytes": 2738163,
+      "modified_utc": "2026-11-25T08:15:52.442325+00:00"
+    },
+    {
+      "category": "output",
+      "name": "horn_cgvi_driver_analysis_300dpi.png",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\horn_cgvi_driver_analysis_300dpi.png",
+      "size_bytes": 283826,
+      "modified_utc": "2026-11-25T08:18:27.261153+00:00"
+    },
+    {
+      "category": "output",
+      "name": "horn_cgvi_driver_analysis_600dpi.png",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\horn_cgvi_driver_analysis_600dpi.png",
+      "size_bytes": 653221,
+      "modified_utc": "2026-11-25T08:18:26.274151+00:00"
+    },
+    {
+      "category": "output",
+      "name": "horn_cgvi_driver_summary.txt",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\horn_cgvi_driver_summary.txt",
+      "size_bytes": 645,
+      "modified_utc": "2026-11-25T08:18:23.607535+00:00"
+    },
+    {
+      "category": "output",
+      "name": "horn_cgvi_equal_area_summary.txt",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\horn_cgvi_equal_area_summary.txt",
+      "size_bytes": 666,
+      "modified_utc": "2026-11-25T06:48:36.454762+00:00"
+    },
+    {
+      "category": "output",
+      "name": "horn_cgvi_sensitivity_300dpi.png",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\horn_cgvi_sensitivity_300dpi.png",
+      "size_bytes": 3014716,
+      "modified_utc": "2026-11-25T08:21:49.773335+00:00"
+    },
+    {
+      "category": "output",
+      "name": "horn_cgvi_sensitivity_600dpi.png",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\horn_cgvi_sensitivity_600dpi.png",
+      "size_bytes": 8812928,
+      "modified_utc": "2026-11-25T08:21:48.489302+00:00"
+    },
+    {
+      "category": "output",
+      "name": "horn_cgvi_sensitivity_report.txt",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\horn_cgvi_sensitivity_report.txt",
+      "size_bytes": 1694,
+      "modified_utc": "2026-11-25T08:21:44.854304+00:00"
+    },
+    {
+      "category": "output",
+      "name": "horn_climate_gender_vulnerability_300dpi.png",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\horn_climate_gender_vulnerability_300dpi.png",
+      "size_bytes": 2368215,
+      "modified_utc": "2026-11-25T06:43:18.372849+00:00"
+    },
+    {
+      "category": "output",
+      "name": "horn_climate_gender_vulnerability_600dpi.png",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\horn_climate_gender_vulnerability_600dpi.png",
+      "size_bytes": 5326829,
+      "modified_utc": "2026-11-25T06:43:16.544663+00:00"
+    },
+    {
+      "category": "output",
+      "name": "horn_qgis_layout_300dpi.png",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\horn_qgis_layout_300dpi.png",
+      "size_bytes": 327458,
+      "modified_utc": "2026-11-25T07:10:58.061582+00:00"
+    },
+    {
+      "category": "output",
+      "name": "horn_qgis_layout_A3.pdf",
+      "path": "C:\\GeoProjects\\HornVulnerability\\output\\horn_qgis_layout_A3.pdf",
+      "size_bytes": 4075604,
+      "modified_utc": "2026-11-25T07:11:01.113623+00:00"
+    },
+    {
+      "category": "qgis_project",
+      "name": "horn_vulnerability.qgs",
+      "path": "C:\\GeoProjects\\HornVulnerability\\qgis_project\\horn_vulnerability.qgs",
+      "size_bytes": 2966,
+      "modified_utc": "2026-11-25T06:43:18.486345+00:00"
+    },
+    {
+      "category": "qgis_project",
+      "name": "horn_vulnerability_styled.qgz",
+      "path": "C:\\GeoProjects\\HornVulnerability\\qgis_project\\horn_vulnerability_styled.qgz",
+      "size_bytes": 12158,
+      "modified_utc": "2026-11-25T07:00:16.022706+00:00"
+    }
+  ]
+}

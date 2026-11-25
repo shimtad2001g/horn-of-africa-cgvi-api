@@ -1,0 +1,12 @@
+Ethiopia Regional Focus - Climate & Gender Vulnerability (CGVI)
+Cartographic CRS: EPSG:32637 (UTM Zone 37N, 1,000 m) | Area CRS: Africa Albers Equal Area (1,000 m)
+Clip Box (EPSG:4326): [33.0, 3.3, 48.0, 15.0]
+CGVI Stats (UTM 37N) -> Min: 0.1976, Mean: 0.2465, Max: 0.4670, Std: 0.0626
+Mapped Area (Classes 1-5): 2,131,163.00 sq km
+
+Equal-Area Class Breakdown:
+  Class 1 - Very Low (0.00 - 0.20): 116 px | 116.00 sq km (0.01%)
+  Class 2 - Low      (0.20 - 0.40): 1,952,153 px | 1,952,153.00 sq km (91.60%)
+  Class 3 - Moderate (0.40 - 0.60): 178,894 px | 178,894.00 sq km (8.39%)
+  Class 4 - High     (0.60 - 0.80): 0 px | 0.00 sq km (0.00%)
+  Class 5 - Very High(0.80 - 1.00): 0 px | 0.00 sq km (0.00%)

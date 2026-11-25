@@ -1,0 +1,11 @@
+﻿__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+*.zip
+data/raw/
+data/processed/*.tif
+output/*.tif
+output/*.gpkg
+output/*.png
+output/*.pdf

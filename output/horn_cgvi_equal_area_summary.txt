@@ -1,0 +1,12 @@
+Horn of Africa Climate & Gender Vulnerability - Equal Area Summary
+Projection: Africa Albers Equal Area Conic (meters, 1000 m nominal cell)
+Pixel Area: 1.0000 sq km
+Total Mapped Area (Classes 1-5): 4,447,305.00 sq km
+Continuous CGVI -> Min: 0.1977, Mean: 0.2927, Max: 0.5003, Std: 0.1023
+
+Class Breakdown:
+  Class 1 - Very Low (0.00 - 0.20): 135 px | 135.00 sq km (0.00%)
+  Class 2 - Low      (0.20 - 0.40): 3,132,653 px | 3,132,653.00 sq km (70.44%)
+  Class 3 - Moderate (0.40 - 0.60): 1,314,517 px | 1,314,517.00 sq km (29.56%)
+  Class 4 - High     (0.60 - 0.80): 0 px | 0.00 sq km (0.00%)
+  Class 5 - Very High(0.80 - 1.00): 0 px | 0.00 sq km (0.00%)
